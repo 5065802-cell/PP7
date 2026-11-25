@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Iframe Sandbox & ReferrerPolicy</title></head>
+<body>
+  <h2>Sandboxed Iframe Demo</h2>
+  <iframe src="https://example.com" width="500" height="250"
+          sandbox="allow-same-origin" referrerpolicy="no-referrer" title="Safe Frame"></iframe>
+
+  <h3>Security Notes: Risks of Links & Iframes</h3>
+  <ul>
+    <li>Unrestricted iframes can enable Clickjacking or run malicious scripts.</li>
+    <li>Using <b>sandbox</b> restricts scripts, forms, and popups inside the frame.</li>
+    <li><b>referrerpolicy="no-referrer"</b> prevents leaking the current URL in the Referer header.</li>
+  </ul>
+</body>
+</html>
